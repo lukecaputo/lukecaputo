@@ -109,6 +109,9 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul.downloads {
