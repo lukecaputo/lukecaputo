@@ -16,12 +16,11 @@
 
       <!--top/left portion of the blog-->
       <header>
-        <h1>Luke Caputo</h1>
-        <p></p>
         <img src="logo.png" alt="Logo" />
-        <p></p>
         <div class="cover">
-          <p>This blog serves as a thought-repository for the projects that I'm working!</p>
+          <p>Thanks for visiting!</p>
+          <p>My name is Luke Caputo and I like to make things. </p>
+          <p>I am using GitHub Pages to document my adventures.</p>
         </div>
       </header>
 
@@ -37,15 +36,26 @@
         <hr>
       -->
 
+        <!--BPQ32 TELNET ACCESS 3/12/2021-->
+        <h2 class="collapsible">Packet Radio Node with Telnet</h2>
+        <div class="content">
+          <h3>3/12/2021</h3>
+          <p>My amateur radio station has been running a packet radio node for the last year. Packet radio has been around for decades and in many areas there are many stations that are set up as "nodes" allowing users to connect to other stations that would be outside of their normal operating distance. Some nodes are just a radio and a modem, and some are connected to a computer with internet links. I opted for a full-featured node and have been using BPQ32.</p>
+          <p>BPQ32 gives the system operator the option of adding a telnet port to the server. In the BPQ32.cfg file, just add the following code:</p>
+          <img src="/assets/20210312_telnet.jpg"/>
+          <p>The fields "CMSCALL" and "CMSPASS" require your input. The most important part after that is setting up users. In the "USER" field, the format is <code>"userID,password,callsign,,SYSOP"</code> for the system operator, or <code>"userID,password,callsign"</code> for guests that you want to allow on your system via telnet. Note: the system operator has a blank fourth field (two commas next to each other) and for both the SYSOP and normal users, there are no spaces between inputs. After doing a reset of BPQ32 to import the updated config file, you will just need to open the identified port on your router. It's also important to setup DDNS so that your public IP does not change. I use ddns.net and it has worked great.</p>
+          <p>Once your BPQ32 telnet port is running, you can access your packet station from anywhere you have internet! This is also a great way of introducing packet radio to other operators who may not be interest in purchasing additional equipment to get into packet - just give them a telnet username and password.</p>
+        </div>      
+
         <!--INITIAL BLOG ENTRY 3/11/2021-->
         <h2 class="collapsible">Initial Blog Entry</h2>
         <div class="content">
           <h4>3/11/2021</h4>
-          <p>   Decided to redirect my domain name from LinkedIn to GitHub Pages to try to add some content. I've been working on a handful of projects, so this would probably be a more <i>useful</i> page to share what I'm doing.</p>
+          <p>I decided to redirect my domain name from LinkedIn to GitHub Pages to try to add some content. I've been working on a handful of projects, so this would probably be a more <i>useful</i> page to share what I'm doing.</p>
           <p></p>
-          <p>   The initial commit was broken because the basic template that I chose was not supported by GitHub pages. So this commit is using the "minimal" theme from GitHub, and I'll build it from here.</p>
+          <p>The initial commit was broken because the basic template that I chose was not supported by GitHub pages. So this commit is using the "minimal" theme from GitHub, and I'll build it from here.</p>
           <p></p>
-          <p>   Looking forward to playing around in a text editor again and seeing what comes out of it!</p>
+          <p>Looking forward to playing around in a text editor again and seeing what comes out of it!</p>
         </div>
 
       </section>
